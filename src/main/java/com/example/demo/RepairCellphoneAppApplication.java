@@ -36,6 +36,8 @@ public class RepairCellphoneAppApplication {
 	    System.out.println("Native sql");
 	    customerRepository.SelectCustomerByFnameEqualsAndEmailEqualsNative("Ebere", "ebere@yahoo.com")
 		    .forEach(System.out::println);
+	    System.out.println("Deleting from the database");
+	    customerRepository.deleteCustomerById(1L);
 
 	};
 
